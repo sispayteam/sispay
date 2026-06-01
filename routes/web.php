@@ -16,7 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('Home');
 });
+Route::get('/epayment', function () {
+    return view('epayment');
+})->name('epayment');
 
+Route::get('/managed', function () {
+    return view('managed');
+})->name('managed');
+
+Route::get('/bank', function () {
+    return view('bank');
+})->name('bank');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

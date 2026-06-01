@@ -52,15 +52,15 @@
                             <li style="background-color: #156565; font-weight: bold; text-align: center; border-radius: 5px;" class="my-2 p-3">
                                <div class="d-flex align-items-center"><a href="e-pay-produit.html"><i class="fa-solid text-light fa-magnifying-glass"></i></a>
                                <img src="{{ asset('assets/images/logo1.png') }}" class="m-auto" height="40PX" alt="" srcset=""> </div> 
-                                <a class="dropdown-item rounded-pill bg-light text-dark my-2" href="e-payment.html">E-payment & hardware</a>
+                                <a class="dropdown-item rounded-pill bg-light text-dark my-2" href="{{ route('epayment') }}">E-payment & hardware</a>
                             </li>
                             <li style="background-color: #43395C; font-weight: bold; text-align: center; border-radius: 5px;" class="my-2 p-3">
                                 <img src="{{ asset('assets/images/logo2.png') }}" class="m-auto" height="40PX" alt="" srcset="">
-                                <a class="dropdown-item rounded-pill bg-light text-dark my-2" href="managed-services.html">Managed Services (Froud & talent)</a>
+                                <a class="dropdown-item rounded-pill bg-light text-dark my-2" href="{{ route('managed') }}">Managed Services (Froud & talent)</a>
                             </li>
                             <li style="background-color: #1F64AD; font-weight: bold; text-align: center; border-radius: 5px;" class="my-2 p-3">
                                 <img src="{{ asset('assets/images/logo3.png') }}" class="m-auto" height="40PX" alt="" srcset="">
-                                <a class="dropdown-item rounded-pill bg-light text-dark my-2" href="financial-services.html">Financial Services Koisks</a>
+                                <a class="dropdown-item rounded-pill bg-light text-dark my-2" href="{{ route('bank') }}">Financial Services Koisks</a>
                             </li>
                         </ul>
                         </div>
