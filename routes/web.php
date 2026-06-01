@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\SipayController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +27,11 @@ Route::get('/managed', function () {
 Route::get('/bank', function () {
     return view('bank');
 })->name('bank');
+
+Route::get('/carriere', 'App\Http\Controllers\SipayController@index')->name('carriere');
+
+Route::get('/carriere/{slug}', 'App\Http\Controllers\SipayController@show')->name('carriere.show');
+Route::post('/send-application', 'App\Http\Controllers\SipayController@send')->name('send.application');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

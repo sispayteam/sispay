@@ -37,7 +37,7 @@
                         <a class="nav-link" href="#blog">News</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="recrutement.html">careers</a>
+                        <a class="nav-link" href="{{ route('carriere') }}">careers</a>
                     </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#contact">Get Started</a>
