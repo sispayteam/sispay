@@ -12,13 +12,19 @@ class SipayController extends Controller
         /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
       
     {
       
-        $offer = Post::where('category_id', '2')->take(5)->get();
+        $query = Post::where('category_id', '2');
+
+        if ($request->filled('q')) {
+            $query->where('title', 'LIKE', '%' . $request->q . '%');
+        }
+
+        $offer = $query->take(5)->get();
       
-        return view('carriere.index',['offer'=>$offer]);
+        return view('carriere.index', ['offer' => $offer]);
     }
   
     public function blog()
@@ -78,5 +84,13 @@ class SipayController extends Controller
        $offer = Post::where('slug', $slug)->firstOrFail();
       
         return view('carriere.show',compact('offer'));
+    }
+       public function Postuler($slug)
+      
+    {
+        //
+       $offer = Post::where('slug', $slug)->firstOrFail();
+      
+        return view('carriere.postuler',compact('offer'));
     }
 }

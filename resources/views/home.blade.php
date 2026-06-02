@@ -162,24 +162,24 @@
                 <div class="d-flex w-100 justify-content-center gap-3">
                     <div class="div2 p-2 animate__animated  animate__fadeInDown">
                         <img src="{{ asset('assets/images/icon1.png') }}" class="m-auto" height="80px" alt="" srcset="">
-                        <h1 style="font-weight: bold;">+15</h1>
+                        <h1 style="font-weight: bold; color: #fff;">+15</h1>
                         <p>Solution déployée en production</p>
                     </div>
                     <div class="div3 p-2 animate__animated  animate__fadeInDown">
                         <img src="{{ asset('assets/images/icon2.png') }}" class="m-auto" height="80px" alt="" srcset="">
-                        <h1 style="font-weight: bold;">+100k</h1>
+                        <h1 style="font-weight: bold; color: #fff;">+100k</h1>
                         <p>De TPE équipés de nos solutions</p>
                     </div>
                 </div>
                 <div class="d-flex w-100 justify-content-center gap-3 ">
                            <div class="div5 p-2 animate__animated  animate__fadeInDown">
                         <img src="{{ asset('assets/images/icon4.png') }}" class="m-auto" height="80px" alt="" srcset="">
-                        <h1 style="font-weight: bold;">+79</h1>
+                        <h1 style="font-weight: bold; color: #fff;">+79</h1>
                         <p>Clients nous ont fait confiance</p>
                     </div>
                     <div class="div4 p-2 animate__animated  animate__fadeInDown">
                         <img src="{{ asset('assets/images/icon3.png') }}" class="m-auto" height="60px" alt="" srcset="">
-                        <h1 style="font-weight: bold;">36</h1>
+                        <h1 style="font-weight: bold; color: #fff;">36</h1>
                         <p>Pays servis à partir du Maroc</p>
                     </div>
              
@@ -192,10 +192,10 @@
     <!-- team section -->
     <section id="team" class="container">
         <div class="col-md-12 text-center mb-5">
-            <h3 class="display-8" style="color:#2690cf">Meet our leadership</h3>
+            <h2 style="color:#2690cf">Meet our leadership</h2>
         </div>
         <div class="row">
-            <div class="col-md-2 col-sm-6">
+            <div class="col">
                 <div class="card">
                     <img src="{{ asset('assets/images/karimzaitouni.png') }}" class="card-img-top" alt="Karim Zaitouni">
                     <div class="card-body">
@@ -204,7 +204,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-6">
+            <div class="col">
                 <div class="card">
                     <img src="{{ asset('assets/images/avatar.png') }}" class="card-img-top" alt="Abdellatif Boumhali">
                     <div class="card-body">
@@ -213,7 +213,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-6">
+            <div class="col">
                 <div class="card">
                     <img src="{{ asset('assets/images/mohammedfathi.png') }}" class="card-img-top" alt="Mohammed Fathi">
                     <div class="card-body">
@@ -222,16 +222,16 @@
                     </div>
                 </div>
             </div>
-              <div class="col-md-2 col-sm-6">
+              <div class="col">
                 <div class="card">
-                    <img src="{{ asset('assets/images/zineb.png') }}" class="card-img-top" alt="Zainab">
+                    <img src="{{ asset('assets/images/zineb.jpeg') }}" class="card-img-top" alt="Zainab">
                     <div class="card-body">
                         <h6 class="card-title">Zainab</h6>
                         <p class="card-text">Processes and Organisation Director</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-6">
+            <div class="col">
                 <div class="card">
                     <img src="{{ asset('assets/images/avatar.png') }}" class="card-img-top" alt="Mohamed El Haloui">
                     <div class="card-body">
@@ -246,7 +246,7 @@
     <!--section caoussel client-->
     <section class="carousel-client container my-5 py-5">
         <div class="col-md-12 text-center mb-5">
-            <h3 class="display-8">What Our Clients Say</h3>
+            <h1>What Our Clients Say</h1>
         </div>
         <div class="col-md-12">
             <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"

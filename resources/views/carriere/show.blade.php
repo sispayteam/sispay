@@ -2,51 +2,43 @@
 
 @section('content')
 
-<!-- ====== blog-page1-area-start=========================================== -->
-<div class="blog-page1-area blog-gallery-page blog-page mt-60 mb-120">
-    <div class="container">
+    <!-- ====== blog-page1-area-start=========================================== -->
+    <div class="blog-page1-area blog-gallery-page blog-page mt-60 mb-120" style="background-color: #E6E6E6;">
+        <div class="container mt-4">
             @if($offer->image)
-               <img class="w-100 mb-4 imageofr" src="{{ Voyager::image($offer->image) }}" alt="{{ $offer->title }}" />
+                <img class="w-100 mb-4 mt-4 imageofr" src="{{ Voyager::image($offer->image) }}" alt="{{ $offer->title }}" />
             @endif
-        <div class="row">
-            <div class="col-md-8  col-sm-8">
-                <div class="blog-page1-content-wrapper">
-                    <div class="blog-page1-content mt-45 mb-45">
+            <div class="row">
+                <div class="col-md-12  col-sm-12">
+                    <div class="blog-page1-content-wrapper">
+                        <div class="blog-page1-content mt-45 mb-45 text-center">
 
-                        {!! $offer->body !!}
-                    </div><!-- /blog-page1-content -->
-                </div><!-- /blog-page1-content-wrapper -->
-            </div><!-- /row -->
-            <div class="col-md-4  col-sm-4">
-                <div class="card p-3">
-                    <h5 class="card-title">Postuler</h5>
-                    <form id="contactForm" method="post" action="{{ route('send.application') }}" enctype="multipart/form-data">
-                       @csrf
-                      <input type="hidden" name="slug" value="{{ $offer->title }}">
-                        <div class="mb-3">
-                            <label for="nom-1" class="form-label">Nom complet</label>
-                            <input type="text" class="form-control" name="name" placeholder="Nom complet" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email-1" class="form-label">Email</label>
-                            <input type="email" class="form-control" name="email" placeholder="Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email-1" class="form-label">Telephone</label>
-                            <input type="tel" class="form-control" name="message" placeholder="Telephone" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="cv-1" class="form-label">Télécharger votre CV</label>
-                            <input type="file" class="form-control" name="cv" accept=".pdf,.docx,.doc">
-                        </div>
-                       <div class="g-recaptcha my-4" data-sitekey="{{ env('RECAPTCHA_SITE_KEY') }}"></div>
-                        <button type="submit" class="btn btn-primary">Soumettre ma candidature</button>
-                    </form>
+                            {!! $offer->body !!}
+                        </div><!-- /blog-page1-content -->
+                    </div><!-- /blog-page1-content-wrapper -->
+                </div><!-- /row -->
+
+            </div>
+            <div class="row align-items-center my-5">
+                <div class="col-md-4">
+                    Find similar jobs:<br>
+                    <a href="{{ route('carriere') }}" class="link" class="text-dark">Jobs in morrocoo</a>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-group mb-4 bg-transparent">
+                        <li class="list-group-item">Publication Date: {!! $offer->updated_at->format('d/m/Y') !!}</li>
+                        <li class="list-group-item">Ref. No: {!! $offer->id !!}</li>
+                        <li class="list-group-item">Location: Casablanca, Morocco</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="btn btn-primary float-end">
+                        <a href="{{ route('carriere.postuler', $offer->slug) }}" class="btn btn-primary">Apply Now</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
 @endsection
