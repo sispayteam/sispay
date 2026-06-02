@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 use TCG\Voyager\Models\Post;
-//use App\Models\Post;
-use App\Mail\ApplicationReceived;
+use App\Candidature;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 
 class SipayController extends Controller
 {
@@ -40,8 +39,12 @@ class SipayController extends Controller
     {
         $request->validate([
           	'slug' => 'required|string',
-            'name' => 'required|string',
+            'fullName' => 'required|string',
             'email' => 'required|email',
+            'phone' => 'required|numeric',
+            'Question1'=> 'nullable|string',
+            'Question2'=> 'nullable|string',
+            'Question3'=> 'nullable|string',
             'message' => 'nullable|string',
             'cv' => 'required|file|mimes:pdf,doc,docx|max:5120', // max 5 Mo
         ]);
@@ -62,17 +65,29 @@ class SipayController extends Controller
             return back()->withErrors(['recaptcha' => 'reCAPTCHA invalide. Veuillez réessayer.']);
         }*/
         $cv = $request->file('cv');
+        $cvPath = $cv->store('cvs', 'public');
+
+        $application = Candidature::create([
+            'slug' => $request->slug,
+            'fullName' => $request->fullName,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'question1' => $request->Question1,
+            'question2' => $request->Question2,
+            'question3' => $request->Question3,
+            'message' => $request->message,
+            'cv_path' => $cvPath,
+        ]);
 
         // Envoi de l'email avec le CV en pièce jointe
-      
-        Mail::to('mohcine.elhanoune@sispay.net')->send(
-            new ApplicationReceived($request->all(), $cv)
-        );
+        //Mail::to('mohcine.elhanoune@sispay.net')
+          //  ->send(
+            //    new ApplicationReceived($request->except('cv'), Storage::disk('public')->path($cvPath))
+            //);
 
-        return back()->with('success', 'Votre candidature a été envoyée avec succès !');
+        return redirect()->route('carriere')
+            ->with('success', 'Votre candidature a été envoyée avec succès !');
     }
-    
-
     /**
      * Display the specified resource.
      */
