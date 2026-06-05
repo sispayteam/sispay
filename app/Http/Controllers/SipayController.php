@@ -29,9 +29,9 @@ class SipayController extends Controller
     public function blog()
       
     {
-        $blogs = Post::where('category_id', '1')->take(5)->get();
+        $blogs = Post::where('category_id', '2')->take(5)->get();
 
-        return view('welcome', compact('blogs'));
+        return view('home',  ['datas' => $blogs]);
     }
   
 

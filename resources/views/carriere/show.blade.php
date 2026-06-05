@@ -9,9 +9,9 @@
                 <img class="w-100 mb-4 mt-4 imageofr" src="{{ Voyager::image($offer->image) }}" alt="{{ $offer->title }}" />
             @endif
             <div class="row">
-                <div class="col-md-12  col-sm-12">
+                <div class="col-md-8 m-auto col-sm-12">
                     <div class="blog-page1-content-wrapper">
-                        <div class="blog-page1-content mt-45 mb-45 text-center">
+                        <div class="blog-page1-content mt-45 mb-45">
 
                             {!! $offer->body !!}
                         </div><!-- /blog-page1-content -->

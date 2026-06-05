@@ -15,7 +15,7 @@ use App\Http\Controllers\SipayController;
 
 Route::get('/', function () {
     return view('Home');
-});
+})->name('home');
 Route::get('/epayment', function () {
     return view('epayment');
 })->name('epayment');

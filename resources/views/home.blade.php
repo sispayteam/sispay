@@ -30,114 +30,9 @@
         </div>
     </section>
     <!-- end hero section -->
-    <!--   speciqlized-->
-    <section id="solutions" class="specialized-section container my-5 py-5">
-        <div class="align-items-center">
-            <div class="col-md-12 col-sx-12 text-center">
-                <h3 class="display-8" style="color:#2690cf">Our Specialized Ecosystem</h3>
-                <p class="mb-4">
-                    SisPay operates through 3 strategic business units, delivering
-                    comprehensive technology solutions for complex industries.
-                </p>
-            </div>
-            <div class="container mt-3">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="{{ asset('assets/images/sld-2.png') }}" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{{ asset('assets/images/sld-1.png') }}" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{{ asset('assets/images/sld-3.png') }}" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button"
-                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end speciqlized -->
-    <!-- BLOG -->
-    <section id="blog" class="blog-section container-fluid my-5 py-5">
-        <div class="align-items-center">
-            <div class="col-md-12 col-sx-12 text-center">
-                <h3 class="display-8 mb-5" style="color:#2690cf">News & Insights</h3>
-            </div>
-            <div class="col-md-12">
-                <div class="multi-carousel-container" id="multiCarousel">
-                    <div class="multi-carousel-inner" id="carouselInner">
-                        <!-- Original items only -->
-                        <div class="multi-carousel-item" data-index="0">
-                            <div class="img-container">
-                                <img src="{{ asset('assets/images/BLOG.png') }}" alt="Image 1">
-                            </div>
-                        </div>
-                        <div class="multi-carousel-item" data-index="1">
-                            <div class="img-container">
-                                <img src="{{ asset('assets/images/BLOG.png') }}" alt="Image 2">
-                            </div>
-                        </div>
-                        <div class="multi-carousel-item" data-index="2">
-                            <div class="img-container">
-                                <img src="{{ asset('assets/images/BLOG.png') }}" alt="Image 3">
-                            </div>
-                        </div>
-                        <div class="multi-carousel-item" data-index="3">
-                            <div class="img-container">
-                                <img src="{{ asset('assets/images/BLOG.png') }}" alt="Image 4">
-                            </div>
-                        </div>
-                        <div class="multi-carousel-item" data-index="4">
-                            <div class="img-container">
-                                <img src="{{ asset('assets/images/BLOG.png') }}" alt="Image 5">
-                            </div>
-                        </div>
-                        <div class="multi-carousel-item" data-index="5">
-                            <div class="img-container">
-                                <img src="{{ asset('assets/images/BLOG.png') }}" alt="Image 6">
-                            </div>
-                        </div>
-                        <div class="multi-carousel-item" data-index="6">
-                            <div class="img-container">
-                                <img src="{{ asset('assets/images/BLOG.png') }}" alt="Image 7">
-                            </div>
-                        </div>
-                        <div class="multi-carousel-item" data-index="7">
-                            <div class="img-container">
-                                <img src="{{ asset('assets/images/BLOG.png') }}" alt="Image 8">
-                            </div>
-                        </div>
-                        <div class="multi-carousel-item" data-index="8">
-                            <div class="img-container">
-                                <img src="{{ asset('assets/images/BLOG.png') }}" alt="Image 9">
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="multi-carousel-control-prev" id="prevBtn">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </button>
-                    <button class="multi-carousel-control-next" id="nextBtn">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end BLOG -->
+      
     <!-- section info -->
-    <section id="info" class="info-section container my-5">
+    <section id="info" class="info-section container mt-5 py-5">
         <div class="row align-items-center">
             <div class="col-md-6 col-sm-12">
                 <div class="div1">
@@ -189,6 +84,45 @@
         </div>
     </section>
     <!-- end section info -->
+    <!--   speciqlized-->
+    <section id="solutions" class="specialized-section container mt-5 py-5">
+        <div class="align-items-center">
+            <div class="col-md-12 col-sx-12 text-center">
+                <h3 class="display-8" style="color:#2690cf">Our Specialized Ecosystem</h3>
+                <p class="mb-4">
+                    SisPay operates through 3 strategic business units, delivering
+                    comprehensive technology solutions for complex industries.
+                </p>
+            </div>
+            <div class="container mt-3">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{{ asset('assets/images/sld-2.png') }}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ asset('assets/images/sld-1.png') }}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ asset('assets/images/sld-3.png') }}" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end speciqlized -->
+
     <!-- team section -->
     <section id="team" class="container">
         <div class="col-md-12 text-center mb-5">
@@ -206,7 +140,7 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="{{ asset('assets/images/avatar.png') }}" class="card-img-top" alt="Abdellatif Boumhali">
+                    <img src="{{ asset('assets/images/AbdellatifBoumhali.png') }}" class="card-img-top" alt="Abdellatif Boumhali">
                     <div class="card-body">
                         <h6 class="card-title">Abdellatif Boumhali</h6>
                         <p class="card-text">Sreach Diractor and Developmment</p>
@@ -224,16 +158,16 @@
             </div>
               <div class="col">
                 <div class="card">
-                    <img src="{{ asset('assets/images/zineb.jpeg') }}" class="card-img-top" alt="Zainab">
+                    <img src="{{ asset('assets/images/zineb.png') }}" class="card-img-top" alt="Zainab">
                     <div class="card-body">
-                        <h6 class="card-title">Zainab</h6>
+                        <h6 class="card-title">Zainab Nachat</h6>
                         <p class="card-text">Processes and Organisation Director</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="{{ asset('assets/images/avatar.png') }}" class="card-img-top" alt="Mohamed El Haloui">
+                    <img src="{{ asset('assets/images/MohamedElHaloui.png') }}" class="card-img-top" alt="Mohamed El Haloui">
                     <div class="card-body">
                         <h6 class="card-title">Mohamed El Haloui</h6>
                         <p class="card-text">Delivery Director</p>
@@ -286,6 +220,18 @@
         </div>
     </section>
     <!--end section caoussel client-->
+       <!-- BLOG -->
+    <section id="blog" class="blog-section container-fluid my-5 py-5">
+        <div class="align-items-center">
+            <div class="col-md-12 col-sx-12 text-center">
+                <h3 class="display-8 mb-5" style="color:#2690cf">News & Insights</h3>
+            </div>
+            <div class="col-md-12">
+                @include('parts.blogCaroussel')
+            </div>
+        </div>
+    </section>
+    <!-- end BLOG -->
     <!-- contact section    -->
     <section id="contact" class="container-fluid contact">
         <div class="container py-5 align-items-center align-content-center">
@@ -330,7 +276,7 @@
                         20150</p>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.4545852406527!2d-7.6460241240487425!3d33.54156354452256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62dae25595197%3A0xbb9978f41188621a!2sSisPay%20SA!5e0!3m2!1sfr!2sma!4v1779268401500!5m2!1sfr!2sma"
-                        width="100%" height="190" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
